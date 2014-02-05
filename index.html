@@ -4,6 +4,7 @@
   <title>Sam Sarnies</title>
   <link href='dist/css/bootstrap.css' rel='stylesheet'>
   <link href='main.css' rel='stylesheet'>
+  <link rel='stylesheet' href='dist/css/bootstrap.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 
@@ -27,11 +28,16 @@
 
         <img class="img-responsive col-sm-4" src='images/sandwich.png'>
 
-      <form role='form' class="col-sm-12">
-        <label for="email">Find out more</label>
-        <input type="text" name="email" >
-        <button xlass="btn btn-success">Send</button>
-      </form>
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe"
+        style="display:none;" onload="if(submitted)
+        {window.location='thanks.html';}"></iframe>
+        <form action="https://docs.google.com/forms/d/1VLwpkUda6teJjegBofJibyOSzR4fRZt0bhVQbGlnyIw/formResponse" method="post"
+            target="hidden_iframe" onsubmit="submitted=true;">
+            <input type="text" name="entry.1179389981" placeholder="name">
+            <input type="text" name="entry.941099091" placeholder="email">
+            <input type="submit" class='btn'>
+        </form>
     </div>
 
     <div id="buzz" class="col-sm-12">
